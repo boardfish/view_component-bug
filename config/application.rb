@@ -34,5 +34,7 @@ module ViewComponentBug
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    ActionView::Template::Handlers::ERB.strip_trailing_newlines = true
   end
 end
